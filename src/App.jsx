@@ -6,13 +6,18 @@ import wingsImg from './assets/Wings.jpeg'
 import CrocodileIMG from './assets/Crocodile.JPG'
 import ActionShotIMG from './assets/ActionShot.jpg'
 import finalsVideo from './assets/Finals-video.mp4'
+import logo from './assets/GuardHaus_Logo.svg'
 
 
 function App() {
   return (
     <main>
       <div className="title-box">
-        <h1>GuardHaus°</h1>
+        <h1>
+          Guard
+          <img src={logo} alt="GuardHaus Logo" className="title-logo" />
+          Haus
+        </h1>
         <p>A Guard Hub for Aspiring Debbies ♡</p>
       </div>
 
@@ -372,8 +377,9 @@ function App() {
 
 <div className="encouragement-box">
 
-  <p>
-    I created this page in hopes that we would all have a place to start.
+    <h2>Why I Built GuardHaus</h2>
+
+    <p>I created this page in hopes that we would all have a place to start.
     <br /><br />
 
     No longer do we have to rummage through the entire internet and social media
@@ -392,23 +398,26 @@ function App() {
 
 </div>
 
-<div className="final-quote">
+<div className="quote-banner">
+  <h3>♡  Remember  ♡</h3>
 
-  Remember:
-  <br /><br />
+  <p className="final-quote">
+    " Love starts with the first drop. "
+  </p>
+</div>
 
-  "Love starts with the first drop,
-  <br />
-  and love will catch our hearts on count one."
-
+<div className="footer-divider">
+  ♡ ♡ ♡
 </div>
 
 <footer>
 
-  <p>GuardHaus ~ 2026</p>
-
-  <p className="footer-quote">
+  <p className="footer-made">
     Made with ♡ by Blanca
+  </p>
+
+  <p className="footer-name">
+    GuardHaus • 2026
   </p>
 
 </footer>
