@@ -1,7 +1,7 @@
 body {
   margin: 0;
 
-  background: #FFFDFC;
+  background: #FFF7F0;
 
   font-family: "Quicksand", sans-serif;
 
@@ -23,7 +23,7 @@ body::after {
 
   width: 40px;
 
-  background-color: #F0E8F8;
+  background-color: #E8DCF6;
 
   z-index: 1;
 
@@ -51,7 +51,7 @@ html::after {
 
   width: 3px;
 
-  background-color:#BDE0FE;
+  background-color: #C5B8E8;
 
   z-index: 1;
 
@@ -80,7 +80,7 @@ main {
 }
 
 h1 {
-  color: #5E5873;
+  color: #4F3C73;
   font-size: 64px;
   font-family: "Emilys Candy", serif;
   letter-spacing: 5px;
@@ -95,7 +95,7 @@ p {
 }
 
 .title-box {
-  background-color: #FFF5DE;
+  background-color: #FFFFFF;
   width: 600px;
   margin: 40px auto;
   padding: 5px 20px 25px 20px;
@@ -117,9 +117,9 @@ nav {
 
   flex-wrap: nowrap;
 
-  background-color: #F7E7F2;
+  background-color: #F3DCEB;
 
-  border: 2px solid #D8B4E2;
+  border: 2px solid #C79DDA;
   border-radius: 999px;
 
   width: 900px;
@@ -145,7 +145,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #D4A5C7;
+  color: #7E8FD6;
   transform: scale(1.1);
 }
 
@@ -164,7 +164,7 @@ nav a:hover {
 
   font-size: 42px;
 
-  color: #5E5873;
+  color: #4F3C73;
 
   text-align: center;
 
@@ -188,12 +188,12 @@ nav a:hover {
 
   align-items: center;
 
-  color: #5E5873;
+  color: #4F3C73;
 
   box-shadow:
     0px 0px 25px rgba(180,160,220,0.25),
     0px 0px 0px 8px white,
-    0px 0px 0px 12px #BDE0FE;
+    0px 0px 0px 12px #C5B8E8;
 }
 
 .hero-button-container {
@@ -205,11 +205,10 @@ nav a:hover {
 }
 
 .hero-button {
-  background-color: #FFF8E7;
+  background-color: #FFFFFF;
+  color: #4F3C73;
 
-  color: #6B5A8E;
-
-  border: 1.5px solid #D4A5C7;
+  border: 2px solid #C5B8E8;   /* soft lavender outline */
 
   border-radius: 999px;
 
@@ -225,13 +224,17 @@ nav a:hover {
 }
 
 .hero-button:hover {
+  background-color: #FFFCF2;   /* warm cream glow */
+
+  color: #4F3C73;
+
   transform: translateY(-3px) scale(1.03);
 
-  background-color:#FFFDF3;
+  box-shadow: 0 10px 25px rgba(120, 90, 170, 0.15);
 }
 
 .guard-card {
-  background-color: #FBE4F7;
+  background-color: #F8EEF7;
 
   width: 400px;
 
@@ -248,7 +251,7 @@ nav a:hover {
 
   outline-offset: -12px;
 
-  color: #5E5873;
+  color: #4F3C73;
 }
 
 .photo-placeholder {
@@ -279,7 +282,7 @@ nav a:hover {
 
 .guard-card li::before {
   content: "♡ ";
-  color: #D4A5C7;
+  color: #7E8FD6;
 }
 
 .photo-caption {
@@ -289,7 +292,7 @@ nav a:hover {
 
   font-family: "Emilys Candy", serif;
 
-  color: #B88DAF;
+  color: #8E6C9F;
 
   font-size: 22px;
 }
@@ -297,7 +300,7 @@ nav a:hover {
 .guard-card h2 {
   font-family: "Emilys Candy", serif;
 
-  color: #5E5873;
+  color: #4F3C73;
 
   text-align: center;
 
@@ -349,15 +352,15 @@ nav a:hover {
 }
 
 .encouragement-box {
-  background-color: #FFF8E7;
+  background-color: #FFFFFF;
   max-width: 850px;
   margin: 70px auto 40px auto;
   padding: 5px 40px 15px 40px;
   border-radius: 50px;
 
-  box-shadow: 0px 8px 20px rgba(180,160,220,0.12);
+  box-shadow: 0px 12px 30px rgba(120, 90, 170, 0.14);
 
-  outline: 2px solid #E6D1E2;
+  outline: 2px solid #EADDEA;
   outline-offset: -10px;
 
   text-align: center;
@@ -386,7 +389,7 @@ nav a:hover {
   font-family: "Quicksand", sans-serif;
   font-size: 30px;   /* instead of 60-64 if that's what you have */
   font-weight: 450;
-  color: #6B5A8E;
+  color: #4F3C73;
   line-height: 1.2;
 }
 
@@ -394,7 +397,7 @@ footer {
 
   text-align: center;
 
-  margin-top: 5px;
+  margin-top: 0px;
 
   padding-bottom: 50px;
 }
@@ -405,7 +408,7 @@ footer h3 {
 
   font-size: 38px;
 
-  color: #6B5A8E;
+  color: #4F3C73;
 
   font-weight: normal;
 
@@ -436,9 +439,9 @@ footer h3 {
 
   font-size: 22px;
 
-  color: #D8B4E2;
+  color: #C5B8E8;
 
-  margin: 0px 0 50px;
+  margin: 35px 0 20px;
 }
 
 .footer-made {
@@ -482,7 +485,7 @@ footer h3 {
   box-shadow:
     0px 0px 25px rgba(180,160,220,0.25),
     0px 0px 0px 8px white,
-    0px 0px 0px 12px #BDE0FE;
+    0px 0px 0px 12px #C5B8E8;
 
   transform: rotate(-1deg);
 
@@ -512,7 +515,7 @@ footer h3 {
 
   box-shadow: 0px 8px 20px rgba(180,160,220,0.18);
 
-  border: 2px solid #BDE0FE;
+  border: 2px solid #C5B8E8;
 
   z-index: 9999;
 
@@ -534,7 +537,7 @@ footer h3 {
 
   padding: 10px 18px;
 
-  color: #5E5873;
+  color: #4F3C73;
 
   text-decoration: none;
 
@@ -544,7 +547,7 @@ footer h3 {
 }
 
 .dropdown-content a:hover {
-  background-color: #FBE4F7;
+  background-color: #F8EEF7;
 
   color: #B88DAF;
 }
@@ -557,16 +560,14 @@ footer h3 {
 }
 
 .quote-banner {
-
   width: 100%;
 
-  margin: 90px auto;
+  margin: 90px auto 50px;
 
   padding: 60px 0;
 
-  border-top: 2px solid #DCEEFF;
-
-  border-bottom: 2px solid #DCEEFF;
+  border-top: 2px solid #E8DCF6;
+  border-bottom: 2px solid #E8DCF6;
 
   text-align: center;
 
@@ -587,3 +588,21 @@ background:
   letter-spacing: 0.5px;
   margin-bottom: 14px;
 }
+
+.footer-credit {
+  font-size: 15px;
+  color: #9A8CB4;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.footer-made {
+  font-size: 20px;
+  color: #C68BBE;
+  font-weight: 600;
+  margin-top: 0;
+
+  line-height: 1.4;
+  margin-bottom: 6px;
+}
+

@@ -413,12 +413,19 @@ function App() {
 <footer>
 
   <p className="footer-made">
-    Made with ♡ by Blanca
+
+     Made with ♡ by Blanca
+
   </p>
 
-  <p className="footer-name">
-    GuardHaus • 2026
+  <p className="footer-credit">
+
+    Logo Artwork
+    <br />
+    by Hannah Zubin
+
   </p>
+
 
 </footer>
 
