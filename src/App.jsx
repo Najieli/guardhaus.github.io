@@ -197,12 +197,12 @@ function App() {
 
       <img
         src={plankTossImg}
-        alt="Feeling Myself Performing ♡"
+        alt="Flag 45 Toss: Plank Catch"
         className="floating-photo"
       />
 
       <div className="photo-caption">
-        Feeling Myself Performing ♡
+        Flag 45 Toss: Plank Catch ♡
       </div>
 
     </div>
@@ -227,12 +227,12 @@ function App() {
 
         <img
           src={handstandImg}
-          alt="Needle Pose"
+          alt="Contortion Handstand"
           className="floating-photo"
         />
 
         <div className="photo-caption">
-          Needle Pose ♡
+          Contortion Handstand ♡
         </div>
 
       </div>
@@ -257,12 +257,12 @@ function App() {
 
       <img
         src={ActionShotIMG}
-        alt="First Performance"
+        alt="Magic at Dayton Finals"
         className="floating-photo"
         />
 
       <div className="photo-caption">
-        First Performance ♡
+        Magic at Dayton Finals ♡
       </div>
 
     </div>
@@ -286,12 +286,12 @@ function App() {
 
       <img
         src={elbowStandImg}
-        alt="First Performance"
+        alt="POV of a WGI Arena Upsidedown"
         className="floating-photo"
         />
 
       <div className="photo-caption">
-        First Performance ♡
+        POV of a WGI Arena Upsidedown ♡
       </div>
 
     </div>
@@ -316,12 +316,12 @@ function App() {
 
       <img
         src={CrocodileIMG}
-        alt="First Performance"
+        alt="Circus Meets Colorguard"
         className="floating-photo"
         />
 
       <div className="photo-caption">
-        First Performance ♡
+        Circus Meets Colorguard ♡
       </div>
 
     </div>
@@ -345,12 +345,12 @@ function App() {
 
       <img
         src={wingsImg}
-        alt="First Performance"
+        alt="From Performer to Coach"
         className="floating-photo"
         />
 
       <div className="photo-caption">
-        First Performance ♡
+        From Performer to Coach ♡
       </div>
 
     </div>
