@@ -173,35 +173,6 @@ function App() {
 
     <div className="guard-card">
 
-      <div className="photo-placeholder">
-
-        <img
-          src={handstandImg}
-          alt="Needle Pose"
-          className="floating-photo"
-        />
-
-        <div className="photo-caption">
-          Needle Pose ♡
-        </div>
-
-      </div>
-
-        <h2>Flexibility</h2>
-
-        <p>The guide to contortion basics:</p>
-
-          <ul>
-            <li>All splits</li>
-            <li>Bridges & Backbends</li>
-            <li>Skills Progression</li>
-            <li>Warm Up & Stretch</li>
-          </ul>
-
-  </div>
-
-  <div className="guard-card">
-
     <div className="photo-placeholder">
 
       <img
@@ -216,9 +187,9 @@ function App() {
 
     </div>
 
-      <h2>Colorguard Basics</h2>
+      <h2>Beginner's Pathway</h2>
 
-      <p>A guide to equipment technique:</p>
+      <p>A guide to movement & equipment technique:</p>
 
       <ul>
         <li>Flag Lovers</li>
@@ -229,32 +200,63 @@ function App() {
 
   </div>
 
+
+    <div className="guard-card">
+
+      <div className="photo-placeholder">
+
+        <img
+          src={handstandImg}
+          alt="Needle Pose"
+          className="floating-photo"
+        />
+
+        <div className="photo-caption">
+          Needle Pose ♡
+        </div>
+
+      </div>
+
+        <h2>Train With Me</h2>
+
+        <p>A guide to circus basics:</p>
+
+          <ul>
+            <li>Warm Up & Stretch</li>
+            <li>Flexibilty & Contortion</li>
+            <li>Handstands & Handbalancing</li>
+            <li>Acrobatic Skills & Jumps</li>
+          </ul>
+
+  </div>
+
+
   <div className="guard-card">
 
     <div className="photo-placeholder">
 
       <img
-        src={elbowStandImg}
-        alt="Contortion Handstand"
+        src={ActionShotIMG}
+        alt="First Performance"
         className="floating-photo"
         />
 
       <div className="photo-caption">
-        Contortion Handstand ♡
+        First Performance ♡
       </div>
 
     </div>
 
-      <h2>Tricks & Tosses</h2>
+      <h2>Beyond Basics</h2>
 
-      <p>A guide to your inner dare devil:</p>
+      <p>Mastered the basics? It's time for some fun:</p>
 
-      <ul>
-        <li>Equipment Tosses</li>
-        <li>Acrobatic Skills</li>
-        <li>Dancer Jumps</li>
-        <li>Contortion Poses</li>
-      </ul>
+        <ul>
+          <li>Creative Tosses</li>
+          <li>Creative Exchanges</li>
+          <li>Creative Movement Skills</li>
+          <li>Challenge Skills</li>
+          </ul>
 
     </div>
 
@@ -279,42 +281,14 @@ function App() {
       <p>You have questions? I have answers:</p>
 
       <ul>
-        <li>Colorguard Advice</li>
-        <li>Taping Tutorials</li>
-        <li>Show Makeup Help</li>
-        <li>Guard Member Goals</li>
+        <li>First Practice Survival Guide</li>
+        <li>Confidence & Performance Nerves</li>
+        <li>Hair, Makeup & Competition Day</li>
+        <li>Ask Your Big Sister</li>
       </ul>
 
     </div>
 
-    <div className="guard-card">
-
-    <div className="photo-placeholder">
-
-      <img
-        src={ActionShotIMG}
-        alt="First Performance"
-        className="floating-photo"
-        />
-
-      <div className="photo-caption">
-        First Performance ♡
-      </div>
-
-    </div>
-
-      <h2>Beginner Pathway</h2>
-
-      <p>Your step-by-step guide from rookie to performer:</p>
-
-        <ul>
-          <li>First Flag Basics</li>
-          <li>Body & Dance Foundations</li>
-          <li>Beginner Toss Progressions</li>
-          <li>Practice Plans</li>
-          </ul>
-
-    </div>
 
     <div className="guard-card">
 
@@ -337,10 +311,39 @@ function App() {
       <p>The place to share, exchange, and grow together:</p>
 
       <ul>
-        <li>Beginner's Corner</li>
-        <li>Technique Help</li>
-        <li>Media Sharing</li>
+        <li>Beginner Questions</li>
+        <li>Community Discussions</li>
         <li>Show Design & Choreography</li>
+        <li>Share Your Work</li>
+      </ul>
+
+    </div>
+
+    <div className="guard-card">
+
+    <div className="photo-placeholder">
+
+      <img
+        src={CrocodileIMG}
+        alt="First Performance"
+        className="floating-photo"
+        />
+
+      <div className="photo-caption">
+        First Performance ♡
+      </div>
+
+    </div>
+
+      <h2>Coaches Corner</h2>
+
+      <p>How to inspire the next generation of guard members ♡ :</p>
+
+      <ul>
+        <li>Teaching Beginners</li>
+        <li>Lesson Plans</li>
+        <li>Practice Planning</li>
+        <li>Team Building</li>
       </ul>
 
     </div>
