@@ -168,6 +168,26 @@ function App() {
 </div>
 
 <div className="carousel-section">
+
+  <div className="scroll-hint left">
+  <div className="scroll-bubble">
+    scroll this way ♡
+  </div>
+
+  <div className="scroll-arrow">
+    ❮❮
+  </div>
+</div>
+
+<div className="scroll-hint right">
+  <div className="scroll-bubble">
+    scroll this way ♡
+  </div>
+
+  <div className="scroll-arrow">
+    ❯❯
+  </div>
+</div>
   
   <div className="guard-card-container">
 
