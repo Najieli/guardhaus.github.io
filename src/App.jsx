@@ -265,7 +265,7 @@ function App() {
     <div className="photo-placeholder">
 
       <img
-        src={wingsImg}
+        src={elbowStandImg}
         alt="First Performance"
         className="floating-photo"
         />
@@ -324,7 +324,7 @@ function App() {
     <div className="photo-placeholder">
 
       <img
-        src={CrocodileIMG}
+        src={wingsImg}
         alt="First Performance"
         className="floating-photo"
         />
