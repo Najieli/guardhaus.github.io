@@ -594,6 +594,7 @@ background:
   color: #9A8CB4;
   margin-bottom: 10px;
   font-style: italic;
+  font-weight: 500;
 }
 
 .footer-made {
@@ -604,5 +605,46 @@ background:
 
   line-height: 1.4;
   margin-bottom: 6px;
+}
+
+.hannah-button {
+  display: inline-block;
+  padding: 8px 22px;
+  border: 2px solid transparent;
+  border-radius: 999px;
+  text-decoration: none;
+  color: #9A8CB4;
+  font-weight: 500;
+
+  background:
+  linear-gradient(#FFF6F8, #FFECEF) padding-box,
+  linear-gradient(
+  90deg,
+  #A88FD8 0%,
+
+  #C9B8F0 40%,
+
+  #FFD6E5 100%
+  ) border-box;
+
+  box-shadow:
+  inset 0 1px 1px rgba(255,255,255,.8),
+  inset 0 -1px 2px rgba(255,150,190,.18),
+  0 2px 5px rgba(128,70,110,.12);
+
+  transition: all .25s ease;
+}
+
+.hannah-button:hover {
+  transform: translateY(-2px);
+
+  background:
+    linear-gradient(#FFF9FA, #FFF1F4) padding-box,
+    linear-gradient(90deg, #C68BBE 0%, #FFB6D2 100%) border-box;
+
+  box-shadow:
+    inset 0 2px 3px rgba(255,255,255,.9),
+    inset 0 -2px 4px rgba(255,120,175,.3),
+    0 8px 16px rgba(128,70,110,.22);
 }
 
