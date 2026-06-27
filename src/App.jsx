@@ -30,15 +30,13 @@ function App() {
 
   <div className="dropdown-content">
 
-    <a href="#">Welcome / Start Here</a>
-
-    <a href="#">About Me</a>
+    <a href="#">Welcome</a>
 
     <a href="#">Why GuardHaus?</a>
 
-    <a href="#">Resources</a>
+    <a href="#">Meet Blanca</a>
 
-    <a href="#">Guard Stories</a>
+    <a href="#">Whats New</a>
 
   </div>
 
@@ -49,53 +47,35 @@ function App() {
 
   <div className="dropdown-content">
 
-    <a href="#">Dancer Basics</a>
+    <a href="#">Getting Started</a>
 
-    <a href="#">Acrobatic Basics</a>
+    <a href="#">Dance Basics</a>
 
-    <a href="#">Balancing Basics</a>
+    <a href="#">Flag Basics</a>
 
-    <a href="#">Equipment Basics</a>
+    <a href="#">Sabre Basics</a>
 
-    <a href="#">Body & Performance</a>
-
-  </div>
-
-</div>
-        <div className="dropdown">
-
-  <a href="#">Blanca Basics</a>
-
-  <div className="dropdown-content">
-
-    <a href="#">Rifle Technique</a>
-
-    <a href="#">Sabre Technique</a>
-
-    <a href="#">Flag Technique</a>
-
-    <a href="#">Dance Technique</a>
-
-    <a href="#">Tricks & Tosses</a>
+    <a href="#">Rifle Basics</a>
 
   </div>
 
 </div>
         <div className="dropdown">
 
-  <a href="#">Flexibility</a>
+  <a href="#">Blanca's Corner</a>
 
   <div className="dropdown-content">
 
-    <a href="#">Splits Series</a>
+    <a href="#">Flexibility 101</a>
 
-    <a href="#">Backbend Series</a>
+    <a href="#">Handbalancing 101</a>
 
-    <a href="#">Skills Progression</a>
+    <a href="#">Acro 101</a>
 
-    <a href="#">Warm Up & Conditioning</a>
+    <a href="#">Strength & Conditioning</a>
 
   </div>
+
 
 </div>
         <div className="dropdown">
@@ -110,7 +90,7 @@ function App() {
 
     <a href="#">Show Design</a>
 
-    <a href="#">Media Sharing</a>
+    <a href="#">Share Your Work</a>
 
   </div>
 
@@ -121,15 +101,13 @@ function App() {
 
   <div className="dropdown-content">
 
-    <a href="#">Performance Photos</a>
+    <a href="#">Photos</a>
+
+    <a href="#">Videos</a>
 
     <a href="#">Toss Highlights</a>
 
-    <a href="#">Behind the Scenes</a>
-
-    <a href="#">Video Showcase</a>
-
-    <a href="#">Favorite Guard Moments</a>
+    <a href="#">Community Spotlight</a>
 
   </div>
 
@@ -140,17 +118,13 @@ function App() {
 
   <div className="dropdown-content">
 
-    <a href="#">FAQs</a>
+    <a href="#">Contact Me</a>
 
     <a href="#">Tutorial Requests</a>
 
-    <a href="#">General Questions</a>
+    <a href="#">Collaborate</a>
 
-    <a href="#">Feedback</a>
-
-    <a href="#">Collaboration</a>
-
-    <a href="#">Contact Form</a>
+    <a href="#">FAQs</a>
 
   </div>
 
