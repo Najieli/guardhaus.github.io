@@ -376,26 +376,21 @@ function App() {
 </div>
 
 <div className="encouragement-box">
+  <h2>Why I Built GuardHaus</h2>
 
-    <h2>Why I Built GuardHaus</h2>
-
-    <p>I created this page in hopes that we would all have a place to start.
-    <br /><br />
-
-    No longer do we have to rummage through the entire internet and social media
-    trying to find guidance, answers, and a community where we belong.
-    <br /><br />
-
-    GuardHaus was created to be a singular platform you can trust — a home
-    filled with resources, inspiration, and support for all your many
-    questions along the way.
-    <br /><br />
-
-    This is more than just a website. GuardHaus is a home, a community,
-    and a place where we can all learn and grow together through every toss,
-    spin, catch, and drop.
+  <p>
+    There was a time when it felt like I had to search all over the internet and
+    social media just to learn more about color guard or discover new skills.
+    This shared experience within our niche sport and community inspired me to change that.
+    From this, GuardHaus was born.
   </p>
 
+  <p>
+    GuardHaus is a place where we can learn, grow, and support one another
+    through every toss, spin, catch, and drop. It is a free resource for anyone
+    just beginning their journey, as well as those who have already fallen in
+    love with the wonderful world of color guard.
+  </p>
 </div>
 
 <div className="quote-banner">
