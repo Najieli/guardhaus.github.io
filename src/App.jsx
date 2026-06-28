@@ -413,7 +413,7 @@ function App() {
   <br/>
    by 
    <br/>
-   Hannah Zubin ♡
+   Hannah Zubin
 </p>
 
 <p className="footer-credit-button">
