@@ -399,41 +399,19 @@ function App() {
 </div>
 
 <div className="footer-divider">
-  ♡ ♡ ♡
+  ♡ ♡ ♡ 
 </div>
 
 <footer>
 
   <p className="footer-made">
-
-     Made with ♡ by Blanca
-
+    Made with ♡ by Blanca
   </p>
-
-  <p className="footer-credit">
-
-    Logo Artwork
-    <br />
-    by Hannah Zubin
-
-  </p>
-
-  <a
-
-  href= "#"
-
-  target="_blank"
-
-  rel="noopener noreferrer"
-
-  className="hannah-button"
-
->
-
-  Work with Hannah ♡
-
+  
+    <a href="#" className="footer-credit-button">
+  Logo Artwork by Hannah Zubin ♡
 </a>
-
+  
 
 </footer>
 

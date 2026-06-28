@@ -1,19 +1,31 @@
 body {
   margin: 0;
 
-  background: #FFF7F0;
+  background:
+    radial-gradient(
+      circle at 50% 15%,
+      rgba(255,255,255,.95) 0%,
+      rgba(255,255,255,0) 45%
+    ),
+    radial-gradient(
+      circle at 15% 35%,
+      rgba(232,220,246,.45) 0%,
+      transparent 40%
+    ),
+    radial-gradient(
+      circle at 85% 35%,
+      rgba(232,220,246,.45) 0%,
+      transparent 40%
+    ),
+    #FFF7F0;
 
   font-family: "Quicksand", sans-serif;
-
   padding: 0 120px;
-
   overflow-x: hidden;
-
 }
 
 body::before,
 body::after {
-
   content: "";
 
   position: fixed;
@@ -26,6 +38,9 @@ body::after {
 
   background-color: #E8DCF6;
 
+  box-shadow:
+    0 0 18px rgba(197,184,232,.45);
+
   z-index: 1;
 
   pointer-events: none;
@@ -37,6 +52,7 @@ body::before {
 
 body::after {
   right: 40px;
+
 }
 
 html::before,
@@ -96,16 +112,21 @@ p {
 }
 
 .title-box {
-  background-color: #FFFFFF;
+  background:
+    linear-gradient(#FFFFFF, #FFF8FB);
+
   width: 600px;
   margin: 40px auto;
-  padding: 5px 20px 25px 20px;
+  padding: 5px 20px 25px;
   border-radius: 999px;
 
   box-shadow:
-  inset 4px 4px 8px rgba(255,255,255,0.65),
-  inset -4px -4px 8px rgba(225,205,140,0.18),
-  0 10px 28px rgba(160,145,190,0.14);
+    inset 0 4px 6px rgba(255,255,255,.95),
+    inset 0 -5px 8px rgba(232,220,246,.55),
+    0 16px 38px rgba(170,155,205,.22),
+    0 0 30px rgba(255,235,245,.45);
+
+  border: 2px solid #F7EDF7;
 
   outline: 3px dotted #D9A4CC;
   outline-offset: -10px;
@@ -206,10 +227,12 @@ nav a:hover {
 }
 
 .hero-button {
-  background-color: #FFFFFF;
+  background:
+    linear-gradient(#FFFFFF, #FFF8FB);
+
   color: #4F3C73;
 
-  border: 2px solid #C5B8E8;   /* soft lavender outline */
+  border: 2px solid #C5B8E8;
 
   border-radius: 999px;
 
@@ -221,7 +244,24 @@ nav a:hover {
 
   cursor: pointer;
 
-  transition: 0.3s;
+  box-shadow:
+    inset 0 3px 5px rgba(255,255,255,.95),
+    inset 0 -4px 6px rgba(230,215,245,.45),
+    0 8px 20px rgba(170,155,205,.18);
+
+  transition: all .25s ease;
+}
+
+.hero-button:hover {
+  transform: translateY(-2px);
+
+  background:
+    linear-gradient(#FFFFFF, #FFFDFE);
+
+  box-shadow:
+    inset 0 4px 6px rgba(255,255,255,.98),
+    inset 0 -5px 8px rgba(230,215,245,.5),
+    0 12px 28px rgba(170,155,205,.24);
 }
 
 .hero-button:hover {
@@ -235,7 +275,7 @@ nav a:hover {
 }
 
 .guard-card {
-  background-color: #F8EEF7;
+  background: linear-gradient(#F8EAF7, #F1DFF2);
 
   width: 400px;
 
@@ -246,7 +286,9 @@ nav a:hover {
   border-radius: 20px;
 
   box-shadow:
-  0 12px 30px rgba(170,155,205,0.14);
+    inset 0 3px 5px rgba(255,255,255,.8),
+    inset 0 -4px 6px rgba(230,215,245,.35),
+    0 12px 30px rgba(170,155,205,.16);
 
   outline: 3px dotted #D4A5C7;
 
@@ -536,11 +578,16 @@ nav a:hover {
 
 footer {
 
+  position: relative;
+
   text-align: center;
 
   margin-top: 0px;
 
-  padding-bottom: 50px;
+  padding-top: 20px;
+
+  padding-bottom: 40px;
+
 }
 
 footer h3 {
@@ -554,15 +601,6 @@ footer h3 {
   font-weight: normal;
 
   margin-bottom: 8px;
-}
-
-.footer-year {
-
-  font-size: 18px;
-
-  color: #8D86A5;
-
-  margin-bottom: 10px;
 }
 
 .footer-quote {
@@ -585,15 +623,6 @@ footer h3 {
   margin: 35px 0 20px;
 }
 
-.footer-made {
-  font-size: 22px;
-
-  color: #C68BBE;
-
-  font-weight: 600;
-
-  margin-bottom: 8px;
-}
 
 .footer-name {
   font-family: "Quicksand", sans-serif;
@@ -738,54 +767,55 @@ background:
   font-weight: 500;
 }
 
-.footer-made {
-  font-size: 20px;
-  color: #C68BBE;
-  font-weight: 600;
-  margin-top: 0;
-
-  line-height: 1.4;
-  margin-bottom: 6px;
-}
-
-.hannah-button {
+.footer-credit-button {
   display: inline-block;
-  padding: 8px 22px;
-  border: 2px solid transparent;
+
+  padding: 10px 22px;
+
+  margin-bottom: 30px;
+
+  background: linear-gradient(#FFFFFF, #FFF6FA);
+
+  border: 2px solid #C5B8E8;
+
   border-radius: 999px;
+
+  color: #4F3C73;
+
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+
   text-decoration: none;
-  color: #9A8CB4;
-  font-weight: 500;
-
-  background:
-  linear-gradient(#FFF6F8, #FFECEF) padding-box,
-  linear-gradient(
-  90deg,
-  #A88FD8 0%,
-
-  #C9B8F0 40%,
-
-  #FFD6E5 100%
-  ) border-box;
 
   box-shadow:
-  inset 0 1px 1px rgba(255,255,255,.8),
-  inset 0 -1px 2px rgba(255,150,190,.18),
-  0 2px 5px rgba(128,70,110,.12);
+    inset 0 2px 4px rgba(255,255,255,.9),
+    inset 0 -3px 6px rgba(200,180,230,.25),
+    0 10px 25px rgba(170,155,205,.18);
 
   transition: all .25s ease;
 }
 
-.hannah-button:hover {
-  transform: translateY(-2px);
-
-  background:
-    linear-gradient(#FFF9FA, #FFF1F4) padding-box,
-    linear-gradient(90deg, #C68BBE 0%, #FFB6D2 100%) border-box;
+.footer-credit-button:hover {
+  transform: translateY(-3px) scale(1.03);
 
   box-shadow:
-    inset 0 2px 3px rgba(255,255,255,.9),
-    inset 0 -2px 4px rgba(255,120,175,.3),
-    0 8px 16px rgba(128,70,110,.22);
+    inset 0 2px 4px rgba(255,255,255,.95),
+    inset 0 -3px 6px rgba(200,180,230,.3),
+    0 16px 35px rgba(170,155,205,.25);
 }
+
+
+.footer-made {
+  font-size: 20px;
+  color: #C68BBE;
+  font-weight: 600;
+  
+
+  line-height: 1.4;
+  margin-bottom: 2%;
+}
+
+
+
 
