@@ -408,9 +408,17 @@ function App() {
     Made with ♡ by Blanca
   </p>
   
-    <a href="#" className="footer-credit-button">
-  Logo Artwork by Hannah Zubin ♡
-</a>
+  <p className="footer-credit">
+  Logo Artwork
+  <br/>
+   by 
+   <br/>
+   Hannah Zubin ♡
+</p>
+
+<p className="footer-credit-button">
+  Work With Hannah
+  </p>
   
 
 </footer>
