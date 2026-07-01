@@ -295,8 +295,6 @@ function Home() {
       </p>
     </div>
     
-    <Footer />
-    
         </main>
 </Layout>
   )
