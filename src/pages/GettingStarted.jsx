@@ -322,6 +322,62 @@ function GettingStarted() {
 
 </section>
 
+<section className="journey-closing">
+
+  <div className="closing-card">
+
+    <div className="corner-flower top-left">✿</div>
+    <div className="corner-flower top-right">✿</div>
+
+    <h2>Your Journey Begins</h2>
+
+    <p className="opening-line">
+      All your favorite colorguard perdromers were once beginners.
+    </p>
+
+    <div className="closing-divider"></div>
+
+    <p>
+  It can be easy to look at all these skills and feel overwhelmed, like you'll never
+  master every single one. But the goal is not about perfection. It's about
+  approaching each new skill with patience, curiosity, and attention to all the little
+ details.
+</p>
+<br/>
+<p>
+  Fifteen minutes of focused, intentional practice will take you further than
+  thirty minutes of just going through the motions. Approach every practice with one
+  small goal. Hone in on that one single detail, and don't worry if the rest of the skill
+  isn't perfect yet.
+</p>
+<br/>
+<p>
+  The truth is, you'll probably always feel like there's room to improve—and
+  that's okay. Just know, that somewhere along the way, other people will start noticing
+  your growth even before you do. One day, someone will look up to you the same way
+  you look up to your favorite performers today.
+</p>
+
+<div className="closing-divider"></div>
+
+<p className="closing-thanks">
+ Drop without fear because TRUST...
+</p>
+
+<h3>One day those catches will be iconic. ♡</h3>
+
+<div className="signature">
+  With love,<br />
+      <span>GuardHaus ♡</span>
+    </div>
+
+    <div className="corner-flower bottom-left">✿</div>
+    <div className="corner-flower bottom-right">✿</div>
+
+  </div>
+
+</section>
+
       </main>
     </Layout>
   );

@@ -30,7 +30,7 @@ function Navbar() {
     
       <div className="dropdown-content">
     
-        <a href="#">Getting Started</a>
+        <a href="#">Start Here 🌟 </a>
     
         <a href="#">Dance Basics</a>
     
