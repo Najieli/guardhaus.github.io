@@ -332,7 +332,7 @@ function GettingStarted() {
     <h2>Your Journey Begins</h2>
 
     <p className="opening-line">
-      All your favorite colorguard perdromers were once beginners.
+      All your favorite colorguard performers were once beginners.
     </p>
 
     <div className="closing-divider"></div>
