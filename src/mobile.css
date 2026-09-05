@@ -149,3 +149,13 @@
 @media (max-width: 1100px) and (prefers-reduced-motion: reduce) {
   #root *, #root *::before, #root *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
 }
+
+@media (max-width: 1100px) {
+  .mobile-nav-bar { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+  .mobile-nav-brand { font-size: 16px; padding: 10px 12px; }
+  .mobile-nav-brand:hover { transform: none; }
+  .mobile-nav .mobile-menu-toggle { display: flex; align-items: center; gap: 9px; padding: 10px 16px; background: #fff8fb; border: 1px solid #c5b8e8; }
+  .mobile-menu-toggle span { font-size: 21px; line-height: 1; }
+  #mobile-menu-content[hidden] { display: none; }
+  #mobile-menu-content { padding-top: 12px; }
+}

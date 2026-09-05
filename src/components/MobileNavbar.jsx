@@ -5,28 +5,38 @@ const sections = [[["/", "Home"], ["/getting-started", "🌸 Getting Started"], 
 
 export default function MobileNavbar() {
   const [open, setOpen] = useState(null);
+  const [expanded, setExpanded] = useState(false);
+  const close = () => { setOpen(null); setExpanded(false); };
   const nav = useRef(null);
   useEffect(() => {
-    const closeOutside = event => { if (!nav.current?.contains(event.target)) setOpen(null); };
+    const closeOutside = event => { if (!nav.current?.contains(event.target)) { setOpen(null); setExpanded(false); } };
     const desktop = window.matchMedia('(min-width: 1101px)');
-    const closeOnDesktop = () => { if (desktop.matches) setOpen(null); };
+    const closeOnDesktop = () => { if (desktop.matches) { setOpen(null); setExpanded(false); } };
     document.addEventListener('pointerdown', closeOutside);
     desktop.addEventListener('change', closeOnDesktop);
     return () => { document.removeEventListener('pointerdown', closeOutside); desktop.removeEventListener('change', closeOnDesktop); };
   }, []);
   return <nav className="mobile-nav" aria-label="Main navigation" ref={nav} onBlur={event => {
-    if (!event.currentTarget.contains(event.relatedTarget)) setOpen(null);
+    if (!event.currentTarget.contains(event.relatedTarget)) close();
   }} onKeyDown={event => {
-    if (event.key === 'Escape' && open !== null) {
-      nav.current.querySelector(`[data-section="${open}"]`)?.focus();
-      setOpen(null);
+    if (event.key === 'Escape' && expanded) {
+      nav.current.querySelector('.mobile-menu-toggle')?.focus();
+      close();
     }
   }}>
+    <div className="mobile-nav-bar">
+      <Link to="/" className="mobile-nav-brand" onClick={close}>GuardHaus ♡</Link>
+      <button type="button" className="mobile-menu-toggle" aria-expanded={expanded} aria-controls="mobile-menu-content" onClick={() => { setExpanded(!expanded); setOpen(null); }}>
+        <span aria-hidden="true">{expanded ? '✕' : '☰'}</span> {expanded ? 'Close' : 'Menu'}
+      </button>
+    </div>
+    <div id="mobile-menu-content" hidden={!expanded}>
     <div className="mobile-nav-labels">
       {sections.map(([[path, title]], index) => <button type="button" key={path} data-section={index} aria-expanded={open === index} aria-controls={`mobile-links-${index}`} onClick={() => setOpen(open === index ? null : index)}>{title}</button>)}
     </div>
     {sections.map((links, index) => <div className="mobile-nav-panel" id={`mobile-links-${index}`} key={links[0][0]} hidden={open !== index}>
-      {links.map(([to, label], linkIndex) => <Link key={to} to={to} onClick={() => setOpen(null)}>{label}{linkIndex === 0 ? ' overview' : ''}</Link>)}
+      {links.map(([to, label], linkIndex) => <Link key={to} to={to} onClick={close}>{label}{linkIndex === 0 ? ' overview' : ''}</Link>)}
     </div>)}
+    </div>
   </nav>;
 }
