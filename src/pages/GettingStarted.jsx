@@ -39,7 +39,7 @@ function GettingStarted() {
       A Little Note From Your Big Sister ♡
     </h3>
 
-    <p>
+    <p className="welcome-body">
       Starting color guard can feel a little overwhelming, but I promise you,
       you're not alone. I was a beginner once too! That's why I made this guide
       to help you figure out where to start. We'll take it one step at a time,
@@ -96,6 +96,29 @@ function GettingStarted() {
   </p>
 
   <div className="roadmap">
+
+  <svg className="roadmap-vine" viewBox="0 0 100 1000" preserveAspectRatio="none" aria-hidden="true">
+    <path
+      className="vine-stem"
+      d="M16 35 C16 75, 50 72, 50 135 S84 195, 84 235 S50 292, 50 335 S16 395, 16 435 S50 492, 50 535 S84 595, 84 635 S50 692, 50 735 S16 795, 16 835 S50 892, 50 965"
+    />
+    <g className="vine-blossoms">
+      <text x="30" y="157">✿</text>
+      <text x="72" y="266">✿</text>
+      <text x="30" y="378">✿</text>
+      <text x="72" y="556">✿</text>
+      <text x="30" y="778">✿</text>
+      <text x="30" y="952">✿</text>
+    </g>
+    <g className="vine-sparkles">
+      <text x="40" y="95">✦</text>
+      <text x="73" y="205">✦</text>
+      <text x="40" y="325">✦</text>
+      <text x="73" y="505">✦</text>
+      <text x="40" y="705">✦</text>
+      <text x="73" y="900">✦</text>
+    </g>
+  </svg>
 
   <div className="roadmap-stop left">
     <div className="roadmap-circle">1</div>

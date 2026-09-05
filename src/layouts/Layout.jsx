@@ -1,10 +1,12 @@
-import Footer from "../components/Footer";
+import SimpleFooter from "../components/SimpleFooter";
 
 function Layout({ children }) {
   return (
     <>
+
       {children}
-      <Footer />
+
+      <SimpleFooter />
     </>
   );
 }

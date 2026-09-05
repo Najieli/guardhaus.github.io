@@ -1,10 +1,13 @@
+import MobileNavbar from './MobileNavbar';
 import { Link } from 'react-router-dom'
 
 function Navbar() {
 
   return (
   
-  <nav>
+  <>
+  <MobileNavbar />
+  <nav className="desktop-nav">
     
        
             <div className="dropdown">
@@ -26,36 +29,36 @@ function Navbar() {
     </div>
             <div className="dropdown">
     
-      <a href="#">Beginner Pathway</a>
+      <Link to="/beginner-pathway">Beginner Pathway</Link>
     
       <div className="dropdown-content">
     
-        <a href="#">Start Here 🌟 </a>
+        <Link to="/beginner-pathway/start-here">Start Here 🌟</Link>
     
-        <a href="#">Dance Basics</a>
+        <Link to="/beginner-pathway/dance-basics">Dance Basics</Link>
     
-        <a href="#">Flag Basics</a>
+        <Link to="/beginner-pathway/flag-basics">Flag Basics</Link>
     
-        <a href="#">Sabre Basics</a>
+        <Link to="/beginner-pathway/sabre-basics">Sabre Basics</Link>
     
-        <a href="#">Rifle Basics</a>
+        <Link to="/beginner-pathway/rifle-basics">Rifle Basics</Link>
     
       </div>
     
     </div>
             <div className="dropdown">
     
-      <a href="#">Blanca's Corner</a>
+      <Link to="/blancas-corner">Blanca's Corner</Link>
     
       <div className="dropdown-content">
     
-        <a href="#">Flexibility 101</a>
+        <Link to="/blancas-corner/flexibility-101">Flexibility 101</Link>
     
-        <a href="#">Handbalancing 101</a>
+        <Link to="/blancas-corner/handbalancing-101">Handbalancing 101</Link>
     
-        <a href="#">Acro 101</a>
+        <Link to="/blancas-corner/acro-101">Acro 101</Link>
     
-        <a href="#">Strength & Conditioning</a>
+        <Link to="/blancas-corner/strength-conditioning">Strength & Conditioning</Link>
     
       </div>
     
@@ -63,56 +66,57 @@ function Navbar() {
     </div>
             <div className="dropdown">
     
-      <a href="#">Guard Forum</a>
+      <Link to="/guard-forum">Guard Forum</Link>
     
       <div className="dropdown-content">
     
-        <a href="#">General</a>
+        <Link to="/guard-forum/general">General</Link>
     
-        <a href="#">Technique Help</a>
+        <Link to="/guard-forum/technique-help">Technique Help</Link>
     
-        <a href="#">Show Design</a>
+        <Link to="/guard-forum/show-design">Show Design</Link>
     
-        <a href="#">Share Your Work</a>
+        <Link to="/guard-forum/share-your-work">Share Your Work</Link>
     
       </div>
     
     </div>
             <div className="dropdown">
     
-      <a href="#">Gallery</a>
+      <Link to="/gallery">Gallery</Link>
     
       <div className="dropdown-content">
     
-        <a href="#">Photos</a>
+        <Link to="/gallery/photos">Photos</Link>
     
-        <a href="#">Videos</a>
+        <Link to="/gallery/videos">Videos</Link>
     
-        <a href="#">Toss Highlights</a>
+        <Link to="/gallery/toss-highlights">Toss Highlights</Link>
     
-        <a href="#">Community Spotlight</a>
+        <Link to="/gallery/community-spotlight">Community Spotlight</Link>
     
       </div>
     
     </div>
             <div className="dropdown">
     
-      <a href="#">Contact</a>
+      <Link to="/contact">Contact</Link>
     
       <div className="dropdown-content">
     
-        <a href="#">Contact Me</a>
+        <Link to="/contact/contact-me">Contact Me</Link>
     
-        <a href="#">Tutorial Requests</a>
+        <Link to="/contact/tutorial-requests">Tutorial Requests</Link>
     
-        <a href="#">Collaborate</a>
+        <Link to="/contact/collaborate">Collaborate</Link>
     
-        <a href="#">FAQs</a>
+        <Link to="/contact/faqs">FAQs</Link>
     
       </div>
     
     </div>
           </nav>
+  </>
     
      )
 

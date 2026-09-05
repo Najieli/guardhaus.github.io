@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-import Layout from "../layouts/Layout";
 import HeroHeader from "../components/HeroHeader";
 
 import handstandImg from '../assets/Handstand.JPG'
@@ -19,14 +18,14 @@ import logo from '../assets/GuardHaus_Logo.svg'
 
 function Home() {
   return (
-<Layout>
+
     <main>
           <HeroHeader
   showLogo={true}
   subtitle="A Guard Hub for Aspiring Debbies ♡"
 />
 
-          <Navbar />
+         <Navbar /> 
     
           <section className="cinematic-section">
     
@@ -294,9 +293,11 @@ function Home() {
         " Love starts with the first drop. "
       </p>
     </div>
+
+        <Footer />
     
         </main>
-</Layout>
+
   )
 }
 

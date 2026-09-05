@@ -1,0 +1,151 @@
+/* A separate small-screen presentation. Original desktop rules stay untouched. */
+.mobile-nav { display: none; }
+@media (max-width: 1100px) {
+  body { padding: 0 36px; }
+  body::before { left: 7px; width: 10px; }
+  body::after { right: 7px; width: 10px; }
+  html::before { left: 23px; }
+  html::after { right: 23px; }
+  #root, #root * { box-sizing: border-box; }
+  #root, main { min-width: 0; }
+  main, .simple-footer { width: 100%; }
+  .title-box { width: min(100%, 644px); padding: 16px 24px 26px; }
+  .title-box h1 { font-size: clamp(34px, 6vw, 60px); line-height: 1.25; letter-spacing: 2px; overflow-wrap: anywhere; }
+  .title-box p { font-size: clamp(16px, 2.5vw, 22px); line-height: 1.6; }
+  .desktop-nav { display: none; }
+  .mobile-nav { display: block; width: 100%; padding: 12px 18px; border-radius: 32px; z-index: 20; }
+  .mobile-nav-labels { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 4px; }
+  .mobile-nav button { font-family: inherit; font-size: 16px; font-weight: 700; color: #6f6a86; background: transparent; border: 0; border-radius: 18px; min-height: 48px; padding: 10px 8px; cursor: pointer; }
+  .mobile-nav button:hover, .mobile-nav button[aria-expanded="true"] { background: #fff8fb; color: #4f3c73; }
+  .mobile-nav button:focus-visible, .mobile-nav a:focus-visible { outline: 2px solid #74548e; outline-offset: 2px; }
+  .mobile-nav-panel { margin: 10px 0 2px; padding: 10px; border-radius: 22px; border: 2px solid #c5b8e8; background: #fff8fb; }
+  .mobile-nav-panel[hidden] { display: none; }
+  .mobile-nav-panel a { display: block; padding: 12px 16px; font-size: 16px; line-height: 1.4; border-radius: 14px; }
+  .mobile-nav-panel a:hover { transform: none; background: #f8eef7; }
+  .cinematic-section { gap: clamp(16px, 4vw, 50px); margin-top: 55px; }
+  .cinematic-video { width: 48%; height: 390px; flex-shrink: 0; }
+  .poetic-line { font-size: clamp(22px, 3.6vw, 36px); }
+  .carousel-section { width: 100%; left: auto; transform: none; }
+  .guard-card-container { padding: 28px 12px; gap: 28px; scroll-snap-type: x mandatory; scroll-padding-inline: 12px; scrollbar-width: thin; scrollbar-color: #c5b8e8 transparent; }
+  .guard-card-container::-webkit-scrollbar { display: block; height: 6px; }
+  .guard-card-container::-webkit-scrollbar-thumb { background: #c5b8e8; border-radius: 10px; }
+  .guard-card { width: min(380px, 85%); padding: 24px; scroll-snap-align: start; }
+  .photo-placeholder { width: 100%; }
+  .floating-photo { height: 280px; }
+  .scroll-hint { display: none; }
+  .note-card { width: min(100%, 780px); height: auto; padding: 60px 45px 40px; }
+  .welcome-message { gap: 28px; }
+  .note-sticker { width: 80px; height: 80px; left: -40px; top: -90px; }
+  .roadmap { width: 100%; gap: 70px; }
+  .roadmap-stop { width: min(350px, 85%); }
+  .roadmap-preview, .roadmap-stop:hover .roadmap-preview { max-height: none; opacity: 1; overflow: visible; margin-top: 22px; }
+  .roadmap-stop:hover { transform: none; padding-bottom: 28px; }
+  .why-layout { flex-direction: column; align-items: center; padding: 0; gap: 70px; margin: 65px auto; }
+  .phone-section { flex: auto; width: min(100% - 20px, 470px); margin: 0; }
+  .phone { width: 100%; margin: 0; }
+  .message.guardhaus p, .message.guardhaus:hover p { opacity: 1; max-height: none; margin-top: 12px; }
+  .message.guardhaus:hover { transform: none; min-height: auto; }
+  .chat-container { overscroll-behavior-y: contain; }
+  .why-right { width: 100%; min-width: 0; }
+  .notes-heading { position: relative; }
+  .notes-heading::before { width: 100%; }
+  .notes-heading h2::after { letter-spacing: 1px; }
+  .notes-grid { margin: 20px auto 0; width: min(100% - 20px, 600px); grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 30px; }
+  .why-note-card { width: 100%; }
+  .corkboard { padding: 36px; }
+  .meet-blanca-page, .template-page, .video-pathway-page, .contact-page { width: 100%; min-width: 0; }
+  .meet-intro > *, .template-photo-section > *, .video-lesson > *, .video-lesson-card > *, .contact-field { min-width: 0; }
+  .video-carousel { overscroll-behavior-x: contain; }
+  .contact-field input, .contact-field select, .contact-field textarea { min-width: 0; font-size: 16px; }
+  .hero-button, .preview-button { max-width: 100%; white-space: normal; }
+}
+@media (max-width: 600px) {
+  body { padding: 0 20px; }
+  body::before { left: 3px; width: 5px; }
+  body::after { right: 3px; width: 5px; }
+  html::before { left: 12px; width: 1px; }
+  html::after { right: 12px; width: 1px; }
+  .title-box { margin: 28px auto; border-radius: 44px; padding: 14px 18px 25px; }
+  .title-box h1 { font-size: clamp(30px, 8vw, 42px); letter-spacing: 0; margin: 20px 0 14px; }
+  .title-logo { width: 38px; margin: 0 8px; }
+  .title-box p { font-size: 16px; }
+  .mobile-nav { margin: 24px auto; padding: 10px; border-radius: 28px; }
+  .mobile-nav-labels { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .mobile-nav button { font-size: 14px; }
+  .cinematic-section { display: grid; grid-template-columns: 1fr 1fr; margin-top: 46px; gap: 28px 12px; }
+  .cinematic-video { grid-column: 1 / -1; grid-row: 1; width: min(84%, 330px); height: 330px; margin: auto; }
+  .poetic-line { font-size: 26px; line-height: 1.4; }
+  .hero-button-container { margin-top: 32px; }
+  .hero-button, .hero-button:link, .hero-button:visited { font-size: 16px; padding: 14px 22px; }
+  .guard-card-container { gap: 18px; padding-inline: 4px; scroll-padding-inline: 4px; }
+  .guard-card { width: 90%; padding: 20px; }
+  .floating-photo { height: 240px; }
+  .photo-placeholder { padding: 10px 10px 16px; }
+  .photo-caption { font-size: 18px; }
+  .guard-card p { font-size: 16px; line-height: 1.6; }
+  .guard-card ul { font-size: 15px; line-height: 1.6; }
+  .encouragement-box { margin: 45px auto 30px; padding: 24px; border-radius: 32px; }
+  .encouragement-box h2 { font-size: 30px; }
+  .encouragement-box p { font-size: 17px; line-height: 1.8; }
+  .quote-banner { margin: 50px auto 30px; padding: 36px 12px; }
+  .quote-banner .final-quote { font-size: 28px; line-height: 1.5; }
+  .footer-credit-button { max-width: 100%; }
+  .welcome-section { margin: 45px auto; }
+  .welcome-section h2, .journey-section h2 { font-size: 32px; line-height: 1.3; }
+  .note-card { margin: 70px auto 45px; padding: 40px 24px 28px; }
+  .note-sticker { width: 66px; height: 66px; left: -16px; top: -74px; }
+  .welcome-note { font-size: 27px; line-height: 1.3; }
+  .welcome-body { font-size: 17px; line-height: 1.8; }
+  .welcome-signoff { font-size: 28px; }
+  .journey-section { margin: 55px auto; }
+  .journey-card { padding: 28px 24px; }
+  .journey-card p { font-size: 17px; line-height: 1.8; }
+  .roadmap { gap: 46px; margin: 40px auto; }
+  .roadmap-stop { width: 94%; padding: 24px; }
+  .roadmap-stop.middle { align-self: center; }
+  .roadmap-stop:hover { padding-bottom: 24px; }
+  .roadmap-intro { font-size: 18px; line-height: 1.7; }
+  .roadmap-preview li { font-size: 16px; }
+  .roadmap-circle { width: 56px; height: 56px; font-size: 30px; }
+  .journey-closing { padding: 0; }
+  .closing-card { padding: 50px 26px; border-radius: 28px; }
+  .closing-card p { font-size: 17px; line-height: 1.8; }
+  .closing-card h2 { font-size: 32px; }
+  .closing-card h3 { font-size: 26px; line-height: 1.4; }
+  .phone { padding: 28px 14px; border-radius: 40px; height: 690px; }
+  .chat-container { gap: 26px; }
+  .message.user, .message.guardhaus { max-width: 93%; margin-left: 0; margin-right: 0; padding: 16px; }
+  .message.guardhaus:hover { max-width: 93%; }
+  .message p { font-size: 16px; line-height: 1.6; }
+  .notes-heading h2 { font-size: 30px; }
+  .notes-heading h2::after { content: '✿ ───────── ✿'; }
+  .notes-grid { grid-template-columns: 1fr; gap: 30px; }
+  .inspiration-section { margin: 60px auto; }
+  .inspiration-section h2 { font-size: 32px; }
+  .corkboard { grid-template-columns: 1fr; padding: 30px 22px; gap: 30px; border-radius: 30px; }
+  .board-note { padding: 24px 20px; }
+  .meet-blanca-page, .template-page, .video-pathway-page, .contact-page { padding-left: 6px; padding-right: 6px; }
+  .meet-photo-frame { width: calc(100% - 30px); }
+  .meet-photo-placeholder { min-height: 270px; }
+  .meet-note-card, .story-card, .meet-values-card { padding-left: 24px; padding-right: 24px; }
+  .template-welcome, .video-pathway-intro { padding: 40px 22px; }
+  .template-prompt-grid, .meet-favorites-grid { padding: 0 8px; }
+  .template-photo-frame { width: calc(100% - 24px); min-height: 230px; }
+  .video-lesson { grid-template-columns: 44px minmax(0, 1fr); gap: 8px; }
+  .video-lesson-number { width: 40px; height: 40px; font-size: 24px; }
+  .video-lesson-track::before { left: 20px; }
+  .video-lesson-card { padding: 14px; }
+  .video-coming-soon { padding: 14px 8px; min-height: 145px; }
+  .video-coming-soon strong { font-size: 16px; }
+  .video-lesson-copy h3 { font-size: 24px; overflow-wrap: anywhere; }
+  .video-lesson-copy > p:not(.video-lesson-label) { font-size: 16px; }
+  .video-carousel-card { flex-basis: min(245px, 82vw); }
+  .video-carousel-hint { max-width: 100%; font-size: 16px; }
+  .contact-form-card { padding: 40px 20px; }
+  .contact-success { padding: 28px 18px; }
+  .contact-success p { font-size: 17px; line-height: 1.7; }
+  .simple-footer { padding: 25px 15px 35px; }
+}
+@media (max-width: 1100px) and (prefers-reduced-motion: reduce) {
+  #root *, #root *::before, #root *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}
