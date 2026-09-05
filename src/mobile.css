@@ -159,3 +159,13 @@
   #mobile-menu-content[hidden] { display: none; }
   #mobile-menu-content { padding-top: 12px; }
 }
+
+@media (max-width: 1100px) {
+  .smooth-roadmap { gap: 52px; }
+  .smooth-roadmap .roadmap-stop { align-self: center; margin-left: 0; margin-right: 0; width: min(440px, 94%); }
+}
+@media (max-width: 600px) {
+  .smooth-roadmap .roadmap-stop { padding: 24px 20px; }
+  .smooth-roadmap .roadmap-stop:hover { padding-bottom: 24px; }
+  .smooth-roadmap .roadmap-stop h3 { font-size: 25px; }
+}

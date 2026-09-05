@@ -16,7 +16,7 @@ function Navbar() {
     
       <div className="dropdown-content">
 
-        <Link to="/getting-started">🌸 Getting Started</Link>
+        <Link to="/getting-started">🌸 Beginner’s Pathway</Link>
 
         <Link to="/why-guardhaus">♡ Why GuardHaus</Link>
 
@@ -29,29 +29,29 @@ function Navbar() {
     </div>
             <div className="dropdown">
     
-      <Link to="/beginner-pathway">Beginner Pathway</Link>
+      <Link to="/beginner-pathway">Start Here</Link>
     
       <div className="dropdown-content">
     
-        <Link to="/beginner-pathway/start-here">Start Here 🌟</Link>
-    
-        <Link to="/beginner-pathway/dance-basics">Dance Basics</Link>
+        <Link to="/beginner-pathway/start-here">Getting Started 🌟</Link>
     
         <Link to="/beginner-pathway/flag-basics">Flag Basics</Link>
     
+        <Link to="/beginner-pathway/rifle-basics">Rifle Basics</Link>
+    
         <Link to="/beginner-pathway/sabre-basics">Sabre Basics</Link>
     
-        <Link to="/beginner-pathway/rifle-basics">Rifle Basics</Link>
+        <Link to="/beginner-pathway/dance-basics">Dance Basics</Link>
     
       </div>
     
     </div>
             <div className="dropdown">
-    
       <Link to="/blancas-corner">Blanca's Corner</Link>
     
       <div className="dropdown-content">
     
+        <Link to="/blancas-corner/getting-started">Blanca’s Corner 🌟</Link>
         <Link to="/blancas-corner/flexibility-101">Flexibility 101</Link>
     
         <Link to="/blancas-corner/handbalancing-101">Handbalancing 101</Link>
@@ -66,7 +66,17 @@ function Navbar() {
     </div>
             <div className="dropdown">
     
-      <Link to="/guard-forum">Guard Forum</Link>
+      <Link to="/beyond-the-basics">Beyond Basics</Link>
+      <div className="dropdown-content">
+        <Link to="/beyond-the-basics/getting-started">Beyond the Basics 🌟</Link>
+        <Link to="/beyond-the-basics/warm-up-exercises">Warm Up Exercises</Link>
+        <Link to="/beyond-the-basics/advanced-skills">Advanced Skills</Link>
+        <Link to="/beyond-the-basics/combo-routines">Combo Routines</Link>
+      </div>
+    </div>
+    <div className="dropdown">
+    
+      <Link to="/guard-forum">Community</Link>
     
       <div className="dropdown-content">
     
@@ -82,23 +92,15 @@ function Navbar() {
     
     </div>
             <div className="dropdown">
-    
       <Link to="/gallery">Gallery</Link>
-    
       <div className="dropdown-content">
-    
         <Link to="/gallery/photos">Photos</Link>
-    
         <Link to="/gallery/videos">Videos</Link>
-    
         <Link to="/gallery/toss-highlights">Toss Highlights</Link>
-    
         <Link to="/gallery/community-spotlight">Community Spotlight</Link>
-    
       </div>
-    
     </div>
-            <div className="dropdown">
+    <div className="dropdown">
     
       <Link to="/contact">Contact</Link>
     

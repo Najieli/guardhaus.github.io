@@ -106,9 +106,7 @@ function WhyGuardHaus() {
     <h3>Beginner Pathway</h3>
 
     <p>
-      I wanted learning guard to feel less overwhelming.
-      So I organized everything into one clear roadmap,
-      one step at a time.
+      Stressing over where to start? Fret no longer—I mapped out the journey for you!
     </p>
 
   </div>
@@ -118,9 +116,7 @@ function WhyGuardHaus() {
     <h3>Equipment Guides</h3>
 
     <p>
-      Nobody tells you how much there is to learn about
-      flags, rifles, sabres, gloves, tape, and equipment.
-      I wanted one place with answers.
+      Equipment care is a beast of its own. Hold on tight—we’ll figure it out together!
     </p>
 
   </div>
@@ -130,9 +126,7 @@ function WhyGuardHaus() {
     <h3>Performance Tips</h3>
 
     <p>
-      Competitions can feel scary your first season.
-      Here you'll find everything I wish someone had
-      explained before my first performance.
+      Show-day butterflies? I’ve got a few tips to help you feel ready for the floor.
     </p>
 
   </div>
@@ -142,9 +136,7 @@ function WhyGuardHaus() {
     <h3>Community</h3>
 
     <p>
-      Guard shouldn't feel lonely.
-      I hope GuardHaus becomes a place where beginners
-      always feel welcome.
+      Feel like everyone else has it figured out? You’re not alone, bestie. Let’s learn, share, and grow together.
     </p>
 
   </div>

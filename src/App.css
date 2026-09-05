@@ -3039,3 +3039,97 @@ linear-gradient(
   .decoration-left { left: 14px; }
   .decoration-right { right: 14px; }
 }
+
+/* Keep the desktop pill fitted to its concise section labels. */
+@media (min-width: 1101px) {
+  .desktop-nav {
+    box-sizing: border-box;
+    width: max-content;
+    max-width: calc(100vw - 80px);
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: 0;
+    margin-right: 0;
+    padding: 28px 24px;
+    gap: 8px;
+  }
+  .desktop-nav > .dropdown { flex-shrink: 0; }
+  .desktop-nav > .dropdown > a {
+    white-space: nowrap;
+    padding-inline: clamp(6px, 1vw, 14px);
+    font-size: clamp(15px, 1.25vw, 18px);
+  }
+}
+
+/* A continuous lavender ribbon follows the actual size of every journey card. */
+.smooth-roadmap { width: min(100%, 860px); gap: 64px; padding: 8px 0; }
+.smooth-roadmap-path { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; overflow: visible; }
+.smooth-roadmap-path path { fill: none; stroke-linecap: round; }
+.roadmap-ribbon-halo { stroke: #eee5f8; stroke-width: 18px; }
+.roadmap-ribbon { stroke: #c5b2df; stroke-width: 8px; }
+.roadmap-ribbon-stitch { stroke: #fff9ff; stroke-width: 2px; stroke-dasharray: 2 10; }
+.roadmap-ribbon-flower { fill: #b18ac6; font-size: 20px; }
+.smooth-roadmap .roadmap-stop { box-sizing: border-box; width: min(440px, 86%); padding: 28px 32px; border: 1px solid #e4d5ef; box-shadow: 0 10px 28px rgba(130, 103, 165, .10); }
+.smooth-roadmap .roadmap-stop.left { margin-left: 8%; }
+.smooth-roadmap .roadmap-stop.right { margin-right: 8%; }
+.smooth-roadmap .roadmap-preview, .smooth-roadmap .roadmap-stop:hover .roadmap-preview { max-height: none; opacity: 1; overflow: visible; margin-top: 18px; }
+.smooth-roadmap .roadmap-stop:hover { transform: none; padding-bottom: 28px; border-color: #c8b1df; box-shadow: 0 12px 30px rgba(130, 103, 165, .15); }
+.smooth-roadmap .roadmap-stop:focus-within { border-color: #b399cc; }
+.smooth-roadmap .roadmap-circle { width: 58px; height: 58px; font-size: 30px; margin-bottom: 18px; background: linear-gradient(145deg, #f3ebfc, #dfcfee); }
+.smooth-roadmap .roadmap-stop:hover .roadmap-circle { transform: none; }
+.smooth-roadmap .roadmap-stop h3 { font-family: 'Emilys Candy', serif; color: #675082; font-size: 27px; font-weight: 400; margin: 8px 0; }
+.smooth-roadmap .roadmap-preview li { margin: 8px 0; }
+.smooth-roadmap .preview-button { display: inline-block; text-decoration: none; line-height: 1.5; }
+.smooth-roadmap .preview-button:focus-visible { outline: 3px solid #80609f; outline-offset: 4px; }
+
+/* Raise the whole navigation stacking context above cards, photos and decorations. */
+#root .desktop-nav, #root .mobile-nav { position: relative; z-index: 1000; overflow: visible; }
+.desktop-nav .dropdown-content { z-index: 1; }
+.desktop-nav .dropdown:focus-within .dropdown-content {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(10px);
+}
+
+/* Give Blanca’s full story a comfortable reading measure and paragraph rhythm. */
+.meet-blanca-page .personal-story { text-align: left; transform: none; }
+.meet-blanca-page .personal-story p { margin: 0; }
+.meet-blanca-page .personal-story p + p { margin-top: 24px; }
+
+.favorite-skills-list { margin: 18px 0 0; padding-left: 22px; text-align: left; color: #6F6A86; font-size: 18px; line-height: 1.8; }
+.favorite-skills-list li + li { margin-top: 8px; }
+.favorite-skills-list li::marker { color: #a276a5; }
+
+/* The first stop: two focused video sections and one clear next step. */
+.getting-started-lessons { box-sizing: border-box; width: 100%; max-width: 850px; margin: 0 auto; padding: 24px 24px 70px; }
+.first-lessons-welcome { font-size: 18px; line-height: 1.8; margin: 10px auto 42px; }
+.first-lesson { position: relative; padding: 34px; margin: 0 0 42px; border: 2px solid #eadff2; border-radius: 30px; background: linear-gradient(135deg, #fffdfb, #fff7fc); box-shadow: 0 12px 30px rgba(170,155,205,.12); }
+.first-lesson-number { display: grid; place-items: center; width: 50px; height: 50px; margin: 0 auto 18px; border-radius: 50%; background: #e8dcf6; color: #675082; font-family: 'Emilys Candy', serif; font-size: 28px; }
+.first-lesson h2, .first-lessons-next h2 { font-family: 'Emilys Candy', serif; color: #675082; font-size: 34px; line-height: 1.25; font-weight: 400; margin: 0 0 16px; }
+.first-lesson > p, .first-lessons-next > p:not(.video-lesson-label) { font-size: 18px; line-height: 1.8; margin: 0 auto 24px; max-width: 600px; }
+.first-lesson-videos { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.first-lesson-video h3 { margin: 0; font-size: 20px; color: #675082; }
+.first-lesson-video { box-sizing: border-box; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 12px; aspect-ratio: 16 / 9; min-height: 180px; padding: 20px; border: 2px dashed #cdb8e2; border-radius: 22px; background: linear-gradient(145deg, #f4edfc, #fbedf6); color: #74548e; }
+.first-lesson-video > span { font-size: 36px; color: #b993cb; }
+.first-lesson-video > small { font-size: 14px; }
+.first-lessons-next { text-align: center; padding: 0 12px 20px; }
+.first-lessons-ribbon { display: block; width: 200px; height: 100px; margin: -24px auto 28px; overflow: visible; }
+.first-lessons-ribbon path { fill: none; stroke: #c5b2df; stroke-width: 7; stroke-linecap: round; }
+.first-lessons-ribbon text { fill: #b18ac6; font-size: 24px; }
+.first-lessons-next > .video-lesson-label { margin: 0 0 18px; }
+.first-lessons-roadmap { display: block; width: fit-content; margin: 22px auto 0; padding: 10px; color: #74548e; font-size: 16px; text-underline-offset: 4px; }
+@media (max-width: 600px) {
+  .getting-started-lessons { padding: 12px 0 40px; }
+  .first-lesson { padding: 26px 18px; border-radius: 24px; }
+  .first-lesson h2, .first-lessons-next h2 { font-size: 29px; }
+  .first-lesson > p, .first-lessons-next > p:not(.video-lesson-label), .first-lessons-welcome { font-size: 16px; }
+  .first-lesson-videos { grid-template-columns: 1fr; gap: 16px; }
+  .first-lesson-video { min-height: 180px; padding: 14px; }
+}
+
+.section-start-links { display: grid; gap: 16px; text-align: left; }
+.section-start-links > a { display: block; padding: 20px; border: 1px solid #ddccec; border-radius: 18px; background: #f7f0fb; color: #675082; text-decoration: none; }
+.section-start-links h3 { margin: 0 0 8px; font-size: 20px; }
+.section-start-links p { margin: 0; line-height: 1.7; }
+.section-start-links > a:hover { background: #eee2f7; }
+.section-start-links > a:focus-visible { outline: 3px solid #80579f; outline-offset: 4px; }

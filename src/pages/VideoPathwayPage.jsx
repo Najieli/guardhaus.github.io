@@ -32,18 +32,6 @@ const cornerChallenges = [
   ["Shape Challenge", "Explore a new line, shape, or transition with intention."],
 ];
 
-const beginnerCombos = [
-  ["Build-a-Combo No. 1", "A sweet little phrase made from your first foundations."],
-  ["Practice Floor Combo", "Connect familiar skills into a simple practice routine."],
-  ["Level-Up Routine", "A longer combo for when you want a new challenge."],
-];
-
-const cornerCombos = [
-  ["Mini Movement Flow", "A short flow to warm up, play, and connect your shapes."],
-  ["Strength + Shape Combo", "Bring control and artistry together in one little routine."],
-  ["Challenge Flow", "A bigger sequence for when you’re ready to explore."],
-];
-
 function VideoRail({ title, subtitle, videos, variant }) {
   return (
     <section className={`video-carousel-section ${variant}`}>
@@ -67,13 +55,36 @@ function VideoRail({ title, subtitle, videos, variant }) {
   );
 }
 
+const nextStops = {
+  "/beginner-pathway": "/beginner-pathway/start-here",
+  "/beginner-pathway/colorguard-101": "/beginner-pathway/start-here",
+  "/beginner-pathway/flag-basics": "/beginner-pathway/rifle-basics",
+  "/beginner-pathway/rifle-basics": "/beginner-pathway/sabre-basics",
+  "/beginner-pathway/sabre-basics": "/beginner-pathway/dance-basics",
+  "/beginner-pathway/dance-basics": "/blancas-corner/getting-started",
+  "/blancas-corner": "/blancas-corner/getting-started",
+  "/blancas-corner/flexibility-101": "/blancas-corner/handbalancing-101",
+  "/blancas-corner/handbalancing-101": "/blancas-corner/acro-101",
+  "/blancas-corner/acro-101": "/blancas-corner/strength-conditioning",
+  "/blancas-corner/strength-conditioning": "/beyond-the-basics/getting-started",
+  "/beyond-the-basics": "/beyond-the-basics/getting-started",
+  "/beyond-the-basics/warm-up-exercises": "/beyond-the-basics/advanced-skills",
+  "/beyond-the-basics/advanced-skills": "/beyond-the-basics/combo-routines",
+  "/beyond-the-basics/combo-routines": "/guard-forum/share-your-work",
+};
+
 function VideoPathwayPage() {
   const { pathname } = useLocation();
   const page = pageTemplates[pathname];
   const isCorner = pathname.startsWith("/blancas-corner");
   const lessons = isCorner ? cornerLessons : beginnerLessons;
   const challenges = isCorner ? cornerChallenges : beginnerChallenges;
-  const combos = isCorner ? cornerCombos : beginnerCombos;
+
+  const nextPath = nextStops[pathname];
+  const nextTitle = {
+    "/blancas-corner/getting-started": "Blanca’s Corner 🌟",
+    "/beyond-the-basics/getting-started": "Beyond the Basics 🌟",
+  }[nextPath] || pageTemplates[nextPath]?.title;
 
   if (!page) return null;
 
@@ -122,19 +133,17 @@ function VideoPathwayPage() {
           variant="challenge-carousel"
         />
 
-        <VideoRail
-          title="Combo Routines"
-          subtitle="When you’re ready to connect your skills, these short routines will give you something lovely to work toward."
-          videos={combos}
-          variant="combo-carousel"
-        />
-
-        <section className="video-pathway-closing">
-          <div>✿</div>
-          <h2>More lessons are on the way.</h2>
-          <p>For now, save this page and come back when you’re ready for the next little step.</p>
-          <Link className="hero-button" to="/getting-started">🌸 Back to Getting Started</Link>
-        </section>
+        {nextTitle && <section className="first-lessons-next" aria-labelledby="next-step-title">
+          <svg className="first-lessons-ribbon" viewBox="0 0 240 120" aria-hidden="true" focusable="false">
+            <path d="M120 0 C120 25 65 20 65 55 S175 75 175 95 S120 100 120 120" />
+            <text x="120" y="68" textAnchor="middle">✿</text>
+          </svg>
+          <p className="video-lesson-label">NEXT ON THE LAVENDER PATH</p>
+          <h2 id="next-step-title">Let’s keep growing.</h2>
+          <p>Ready for your next little step? {nextTitle} is waiting for you.</p>
+          <Link className="hero-button" to={nextPath}>Continue to {nextTitle} →</Link>
+          <Link className="first-lessons-roadmap" to="/getting-started">Explore the full lavender path ♡</Link>
+        </section>}
       </main>
     </Layout>
   );

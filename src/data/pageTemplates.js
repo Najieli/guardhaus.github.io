@@ -19,10 +19,40 @@ export const pageTemplates = {
     ["How to use this pathway", "Choose your first lesson", "Celebrate your progress"]
   ),
   "/beginner-pathway/start-here": makeTemplate(
-    "Start Here",
+    "Getting Started",
     "Your first spin starts now 🌟",
     "Use this page as a gentle first stop for brand-new guard members—what to expect, what to bring, and how to take that first brave step.",
     ["Your first practice", "Beginner checklist", "A confidence reminder"]
+  ),
+  "/beginner-pathway/colorguard-101": makeTemplate(
+    "Colorguard 101",
+    "Get to know the world of guard ♡",
+    "An introduction to color guard, its equipment, terminology, and the difference between fall and winter guard.",
+    ["What is color guard?", "Equipment and terminology", "Fall and winter guard"]
+  ),
+  "/beyond-the-basics/warm-up-exercises": makeTemplate(
+    "Warm Up Exercises",
+    "Prepare for your next practice ♡",
+    "A home for warm-up videos and exercises to help you get ready to move.",
+    ["Getting ready", "Skill breakdown", "Practice routine"]
+  ),
+  "/beyond-the-basics/advanced-skills": makeTemplate(
+    "Advanced Skills",
+    "Your next challenge starts here ✦",
+    "Explore the next level of tosses, equipment skills, and creative movement.",
+    ["Getting ready", "Skill breakdown", "Practice routine"]
+  ),
+  "/beyond-the-basics/combo-routines": makeTemplate(
+    "Combo Routines",
+    "Bring your skills together ✿",
+    "Connect familiar skills into combinations and routines, one phrase at a time.",
+    ["Getting ready", "Skill breakdown", "Practice routine"]
+  ),
+  "/beyond-the-basics": makeTemplate(
+    "Beyond the Basics",
+    "Keep growing, one brave catch at a time ✦",
+    "A space for creative tosses, movement combinations, and new challenges once you feel comfortable with the foundations.",
+    ["Creative tosses", "Movement combinations", "Challenge skills"]
   ),
   "/beginner-pathway/dance-basics": makeTemplate(
     "Dance Basics",
